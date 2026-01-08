@@ -13,6 +13,10 @@ This project is not affiliated with the original `schemat` project.
 
 - `schemat` CLI tool installed. The extension can help you install it via `cargo binstall`.
 
+# Downloads
+
+Unfortunately I am unable to create Azure DevOps account for some stupid reason. You can either built from source or download zip archive directly from actions. Here's a direct link to latest successfull run: https://github.com/playX18/schemat-vsx/actions/runs/20818118107/artifacts/5062892475
+
 ## Extension Settings
 
 This extension has only one setting:
