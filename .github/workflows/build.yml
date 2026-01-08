@@ -4,13 +4,11 @@ on:
   push:
     branches:
       - main
-      - master
     tags:
       - 'v*'
   pull_request:
     branches:
       - main
-      - master
 
 jobs:
   build:
@@ -43,3 +41,9 @@ jobs:
       with:
         name: schemat-vsx-vsix
         path: "*.vsix"
+
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: "*.vsix"
