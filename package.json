@@ -7,6 +7,12 @@
   "engines": {
     "vscode": "^1.70.0"
   },
+  "license": "MIT",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/playX18/schemat-vsx"
+  },
   "categories": [
     "Formatters"
   ],
@@ -18,8 +24,14 @@
     "languages": [
       {
         "id": "scheme",
-        "aliases": ["Scheme", "scheme"],
-        "extensions": [".scm", ".ss"]
+        "aliases": [
+          "Scheme",
+          "scheme"
+        ],
+        "extensions": [
+          ".scm",
+          ".ss"
+        ]
       }
     ],
     "configuration": {
