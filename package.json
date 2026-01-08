@@ -1,0 +1,46 @@
+{
+  "name": "schemat-vsx",
+  "publisher": "user",
+  "displayName": "Schemat Formatter",
+  "description": "Scheme formatter using schemat",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:scheme"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "scheme",
+        "aliases": ["Scheme", "scheme"],
+        "extensions": [".scm", ".ss"]
+      }
+    ],
+    "configuration": {
+      "title": "Schemat",
+      "properties": {
+        "schemat.command": {
+          "type": "string",
+          "default": "schemat",
+          "description": "Path to the schemat executable"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "@types/node": "^16.x",
+    "typescript": "^4.7.4"
+  }
+}
